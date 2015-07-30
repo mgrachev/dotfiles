@@ -9,5 +9,6 @@ alias git_aliases="cat ~/.oh-my-zsh/plugins/git/git.plugin.zsh"
 
 # Ruby on Rails
 alias migrate="rake db:migrate db:rollback && rake db:migrate"
+alias rspec="bundle exec rspec"
 
 alias cask="brew cask"
