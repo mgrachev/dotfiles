@@ -21,7 +21,7 @@ DISABLE_AUTO_UPDATE="true"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-DISABLE_AUTO_TITLE="true"
+# DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -94,3 +94,7 @@ fi
 
 # Set maximum number of open file descriptors
 ulimit -n 1024
+
+# ZSH completion for Platformio
+autoload bashcompinit && bashcompinit
+eval "$(_PLATFORMIO_COMPLETE=source platformio)"
